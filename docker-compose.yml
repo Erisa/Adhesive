@@ -4,3 +4,7 @@ services:
     restart: always
     volumes:
       - ./config.toml:/usr/src/app/config.toml
+      - ./db.sqlite3:/usr/src/app/db.sqlite3
+      - ./db.sqlite3-wal:/usr/src/app/db.sqlite3-wal
+      - ./db.sqlite3-shm:/usr/src/app/db.sqlite3-shm
+      - ./anon.session:/usr/src/app/anon.session
