@@ -1,0 +1,6 @@
+services:
+  bot:
+    build: .
+    restart: always
+    volumes:
+      - ./config.toml:/usr/src/app/config.toml
